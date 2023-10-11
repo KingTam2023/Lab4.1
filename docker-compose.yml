@@ -1,0 +1,29 @@
+version: '3.1'
+services:
+  oracle:
+    image: doctorkirk/oracle-19c
+    ports:
+      - 1521:1521
+    environment:
+      # - ORACLE_PWD=oracle
+      # - ORACLE_PWD=oracle
+      # - ORACLE_CHARACTERSET=AL32UTF8
+      # - ORACLE_EDITION=EE
+      - ORACLE_SID=ORCLCDB
+      # - ORACLE_MEM=1G
+      # - ORACLE_DB_ENABLE_XDB=true
+      # - ORACLE_ENABLE_AUDIT_TRAIL=true
+      # - ORACLE_ENABLE_SHADOW=true
+      # - ORACLE_ENABLE_UTC=true
+      # - ORACLE_ENABLE_XDB=true
+      # - ORACLE_PASSWORD_EXPIRE=true
+      # - ORACLE_RESTRICTED_SESSION=false
+      # - ORACLE_SYSTEM_PASSWORD=oracle
+      # - ORACLE_SYSOPER_PASSWORD=oracle
+      # - ORACLE_SYS_PASSWORD=oracle
+      # - ORACLE_USER_PASSWORD=oracle
+      # - ORACLE_WORKLOAD=OLTP
+      # - ORACLE_DBCA_TOTAL_MEMORY=1024
+      # - ORACLE_LISTENER_PORT=1521
+
+# Copy the database scripts
